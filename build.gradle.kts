@@ -13,10 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.code.gson:gson:2.13.2")
-    implementation("com.squareup.okhttp3:okhttp:5.3.2")
-
-
     ///// Testing
 
     testImplementation(kotlin("test"))
@@ -38,18 +34,29 @@ dependencies {
     // assertj
     testImplementation("org.assertj:assertj-core:3.27.7")
 
-    // other goodies
+    // Other goodies
+
+    // okhttp3 client
+    implementation("com.squareup.okhttp3:okhttp:5.3.2")
+
     // rxjava
     implementation("io.reactivex.rxjava3:rxjava:3.1.12")
 
-    // kotlin serialization
+    // kotlin serialization, for JSON
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.10.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.10.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 
-    // logging, opt-in if needed
-    implementation("io.github.oshai:kotlin-logging-jvm:8.0.01")
-    implementation("ch.qos.logback:logback-classic:1.5.32")
+    // gson, if there's issues with kotln serialization
+    // implementation("com.google.code.gson:gson:2.13.2")
+
+    // logging
+    // val logger = KotlinLogging.logger {} ; logger.info { Hello World }
+//    implementation("io.github.oshai:kotlin-logging-jvm:8.0.01")
+//    implementation("ch.qos.logback:logback-classic:1.5.32")
+
+    // guice
+    // implementation("com.google.inject:guice:7.0.0")
 }
 
 kotlin {
