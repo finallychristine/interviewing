@@ -13,7 +13,9 @@ file.
 * [kotlin-logging](https://github.com/oshai/kotlin-logging)
 * [rxjava](https://github.com/reactivex/rxjava)
 * [okhttp](https://square.github.io/okhttp/)
-* [guice](https://github.com/google/guice)
+* [retrofit](https://square.github.io/retrofit/)
+* [guava](https://github.com/google/guava)
+* [dagger](https://github.com/google/dagger)
 
 
 **Test Libraries**
